@@ -17,12 +17,13 @@ const imagenes = [
     '/TechIcons/css.svg',
     '/TechIcons/html5.svg',
     '/TechIcons/angular.svg',
+    '/TechIcons/vscode.svg',
 
 ]
 
 export default function SwiperTech() {
     return (
-        <section className="xl:size-9/12 lg:size-11/12 md:size-[100%] sm:size-[60%] size-96 mt-10">
+        <section className="xl:size-9/12 lg:size-11/12 md:size-[100%] sm:size-[60%] w-[400px] mt-10">
           <Swiper
             modules={[EffectCoverflow, Pagination, Autoplay]}
             effect={'coverflow'}
@@ -47,7 +48,7 @@ export default function SwiperTech() {
             {imagenes.map((p, index) => {
               return (
                 <SwiperSlide key={index} >
-                  <img src={p} alt="" class="lg:w-40 md:w-40 sm:w-36 h-36 px-5 block" />
+                  <img src={p} alt="" className="lg:w-40 md:w-40 sm:w-36 h-36 px-5 block" />
                 </SwiperSlide>
               );
             })}

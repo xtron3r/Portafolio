@@ -33,7 +33,6 @@ export default function SwiperTech() {
             pagination={{
               clickable: true,
             }}
-            centeredSlides={true}
             grabCursor={true}
             coverflowEffect={{
               rotate: 0,
